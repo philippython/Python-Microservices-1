@@ -1,5 +1,5 @@
 # from django.test import TestCase
-
+from functools import reduce
 # Create your tests here.
 
 def multipy(*args):
@@ -23,5 +23,9 @@ result = list(map(round, circle_areas, range(1, 7)))
 print(result)
 
 # filtering 
-past = list(filter(lambda word :  'd' in word, ["laughed", "pray", "killed", "raped", "race"]))
+past = list(filter(lambda word , char:  char in word, ["laughed", "pray", "killed", "raped", "race"]))
 print(past)
+
+# reducing
+multi = reduce(multipy, transactions, 1)
+print(multi)
