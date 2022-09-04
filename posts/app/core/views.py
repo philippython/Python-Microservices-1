@@ -12,7 +12,7 @@ class PostAPIView(APIView):
 
     
     def format(self, post):
-        formatted = requests.get('localhost:8001/api/posts/%d/comments' % post.id).json()
+        formatted = requests.get('http://localhost:8001/api/posts/%d/comments' % post.id).json()
         return {
             "id": post.id,
             "title": post.title,
