@@ -54,3 +54,7 @@ reduce_result = reduce(lambda num1, num2: num1 + num2, my_numbers, 0)
 print(map_result)
 print(filter_result)
 print(reduce_result)
+
+
+def cakes(recipe, available):
+    return min(available.get(k, 0)/recipe[k] for k in recipe)
