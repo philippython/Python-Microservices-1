@@ -1,7 +1,7 @@
 # from django.test import TestCase
 from functools import reduce
 # Create your tests here.
-
+"""
 def multipy(*args):
     sum = 1
     for num in args:
@@ -58,3 +58,14 @@ print(reduce_result)
 
 def cakes(recipe, available):
     return min(available.get(k, 0)/recipe[k] for k in recipe)
+
+d ={
+  "fantasy": "harrypotter",
+  "romance": "me before you",
+  "fiction": "divergent"
+  }
+
+"""
+#  code war II
+
+print(len("abcdefghijklmnopqrstuvwxyz12345"))
