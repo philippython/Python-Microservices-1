@@ -32,6 +32,8 @@ print(multi)
 
 #exercise
 
+fruits = set(('apple', 'banana', 'groundnut', 'maize'))
+print(fruits)
 
 # Use map to print the square of each numbers rounded
 # to three decimal places
